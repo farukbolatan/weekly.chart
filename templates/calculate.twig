@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/list.css') }}">
+    <title>Hesaplama</title>
+</head>
+<body>
+<div class="table-container">
+    <table class="custom-table">
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>Week</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for name, data in values %}
+            <tr>
+                <th>{{ name }}</th>
+                <th>{{ data.week }}</th>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/list.css') }}">
+    <title>Çalışanlar</title>
+</head>
+<body>
+<div class="table-container">
+    <table class="custom-table">
+        <thead>
+        <tr>
+            <td>User Id</td>
+            <td>Name</td>
+            <td>Working Speed</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for value in values %}
+        <tr>
+            {% for item in value %}
+                <th>{{ item }}</th>
+            {% endfor %}
+        <tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<button id="redirectButton">Plan divided into Weeks</button>
+<script src="{{ asset('js/home-redirect.js') }}"></script>
+</body>
+</html>

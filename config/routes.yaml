@@ -1,0 +1,6 @@
+home_page:
+  path: /
+  controller: App\Controller\Site\BaseController::list
+work_schedule:
+  path: /work-schedule
+  controller: App\Controller\Site\ScheduleController::list
